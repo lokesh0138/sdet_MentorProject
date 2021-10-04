@@ -1,0 +1,47 @@
+
+<mat-toolbar>   
+        Navigation Bar  
+</mat-toolbar>
+<mat-sidenav-container>
+    
+    <mat-sidenav mode="side" opened>
+        <button mat-button class="menu-button">
+            Java
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button">
+            Angular
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button">
+            React JS
+        </button>
+        <mat-divider></mat-divider>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z4">
+            <div class="input-group mb-3">
+                <!-- <span class="input-group-text" id="basic-addon1">Search</span> -->
+                <input type="text" #search (keyup)="0" class="form-control" placeholder="Search a Mentor" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            
+            <mat-card >
+                <div class="search-result_head">
+                    <div>
+                        <mat-card-title>Java Performance Tuning</mat-card-title>
+                        <mat-card-subtitle>by Tim Ojo</mat-card-subtitle>
+                        <mat-card-content class="card-content">Learn tools and techniques for troubleshooting, analyzing, and improving the performance of your Java application. Advance your mastery of the Java language and ecosystem.</mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button class="button"> BOOK </button>
+                        </mat-card-actions>
+                    </div>
+                    
+                    <div class="search-result_icon">
+                        <img mat-card-image src="./../../assets/images/java.png">
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
